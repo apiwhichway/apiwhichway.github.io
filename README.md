@@ -1,8 +1,8 @@
 
 # W_Web
 
-https://apiwhichway.github.io/W_WEB/Enabling conda in Windows Powershell.html
+[Enabling conda in Windows Powershell]{https://apiwhichway.github.io/W_WEB/Enabling conda in Windows Powershell.html}
 
-https://apiwhichway.github.io/W_WEB/Markdown to slides.html
+[Markdown to slides]{https://apiwhichway.github.io/W_WEB/Markdown to slides.html}
 
-https://apiwhichway.github.io/W_WEB/Head-Tail.html
+[Mardown to slides head and tail]{https://apiwhichway.github.io/W_WEB/Head-Tail.html}
