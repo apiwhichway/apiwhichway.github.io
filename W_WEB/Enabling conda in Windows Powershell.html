@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10 awesome features of Python that you can't use because you refuse to upgrade to Python 3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+
+# Enabling conda in Windows Powershell
+First, in an administrator command prompt, enable unrestricted Powershell script execution (see About Execution Policies):
+
+```ps1
+set-executionpolicy unrestricted
+```
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+<!--  -->
+---
+<!--  -->
+
+# Then makes sure that the conda Script directory in is your Path. 
+
+
+For instance, with miniconda: %USERPROFILE%\\Miniconda3\\Scripts.
+
+In a regular Powershell prompt check if conda is working, and update to latest version:
+
+```ps1
+conda update conda
+conda --version
+```
+
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+<!--  -->
+---
+<!--  -->
+# should be conda 4.6.1 or newer
+
+Setup conda for Powershell using the following command:
+
+```ps1
+conda init powershell
+```
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+<!--  -->
+---
+<!--  -->
+
+# Finally, restart powershell. 
+
+An initialisation script is run every time Powershell starts. You should now be able to activate environment with:
+
+```ps1
+conda activate
+```
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+<!--  -->
+---
+<!--  -->
+
+# Also, the vscode PS is not the same as system PS
+
+> 12/10/2023 10:08
+
+open non-admin PS
+
+```ps1
+conda init powershell
+```
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+<!--  -->
+---
+<!--  -->
+
+# admin PS is not the same as vscode PS
+
+> 12/10/2023 10:10
+
+open vscode PS
+
+```ps1
+conda init powershell
+```
+
+> https://gist.github.com/martinsotir/2bd2e16332dff71e0fa5be3ed3468a6c
+
+
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-0.6.3.min.js" type="text/javascript">
+</script>
+<!-- Uncomment this if there is no internet -->
+
+<!-- <script src="remark-0.6.3.min.js" type="text/javascript"> -->
+<!--   </script> -->
+
+<script type="text/javascript">
+  var slideshow = remark.create(      {
+    // Navigation options
+    navigation: {
+      // Enable or disable navigating using scroll
+      // Default: true
+      // Alternatives: false
+      scroll: false,
+    }
+  }
+  );
+</script>
+</body>
+</html>
