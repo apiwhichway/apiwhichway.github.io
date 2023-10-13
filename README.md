@@ -9,6 +9,13 @@
 2023/10/12 [Fast configure Mardown to slides head and tail](https://apiwhichway.github.io/W_WEB/Head-Tail.html)
 
 
+
+TODO
+-------
+- [ ] add more css, as the cdn format [cdnjs.com](https://cdnjs.com/)
+- [ ] add more js, as the cdn format [cdnjs](https://cdnjs.com/)
+
+
 License
 -------
 ```
@@ -22,5 +29,5 @@ as the name is changed.
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-0. You just DO WHAT THE FUCK YOU WANT TO.
+1. You just DO WHAT THE FUCK YOU WANT TO.
 ```
