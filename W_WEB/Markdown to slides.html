@@ -3,9 +3,28 @@
   <head>
     <title>Some fucking great github Markdown to Slides project</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <
     <style type="text/css">
       /* Slideshow styles */
     </style>
+
+    <!-- MathJax support  -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        showProcessingMessages: false,
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support end -->
+
   </head>
   <body>
     <textarea id="source">
@@ -20,11 +39,20 @@
     - it was not okay after create \[11/10/2023 20:29\]
         Create a new project, complete with some template slides, the css, and the javascript.
         
-        ```sh
-        $ slidedeck create my_slides
+        ```shell
+        slidedeck create my_slides
         ```
         
+        $$
+        1^2, \frac{a}{b}
+        $$
+        
         and it throw errors, ancient projects...
+
+
+
+
+
 
       
 <!-- 1 comment-->
@@ -65,7 +93,7 @@ markdwwon-to-slides README.md -o README.html
 
 ### Remember, if npm is not work in Powershell
 Run the fucking command
-```sh
+```shell
 npm init powershell
 ```
 
