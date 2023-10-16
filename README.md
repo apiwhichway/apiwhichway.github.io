@@ -8,7 +8,9 @@
 
 2023/10/12 [Fast configure Mardown to slides head and tail](https://apiwhichway.github.io/W_WEB/Head-Tail.html)
 
-2023/10/13 [Play Streamlit Element](https://apiwhichway.github.io/W_WEB/W_WEB/Streamlit-element.html)
+2023/10/13 [Play Streamlit Element](https://apiwhichway.github.io/W_WEB/Streamlit-element.html)
+
+2023/10/14 [Glmark2](https://apiwhichway.github.io/W_WEB/Glmark2.html)
 
 
 TODO
