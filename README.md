@@ -12,6 +12,10 @@
 
 2023/10/16 [Glmark2](https://apiwhichway.github.io/W_WEB/Glmark2.html)
 
+2023/10/17 [RE.OAN](https://apiwhichway.github.io/W_WEB/OAN-Reshape.html)
+
+2023/10/17 [LicheePiA4](https://apiwhichway.github.io/W_WEB/Yolov5onLicheeA4.html)
+
 
 TODO
 -------
