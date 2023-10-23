@@ -301,6 +301,95 @@ we can refer to BboxToolKit github for more information
 <!--  -->
 
 
+## 3 inference
+
+```shell
+# inference on a single image
+python demo/huge_image_demo.py demo/large_image.jpg configs/oan/faster_rcnn_roitrans_r50_fpn_1x_dota10_oan.py P_PTH/faster_rcnn_roitrans_r50_fpn_1x_dota10_oan.pth  BboxToolkit/tools/split_configs/dota1_5/ss_test.json output.png
+```
+
+We can also select the specific image of DOTA datasets to inference
+
+```shell
+# inference on a single image
+python demo/huge_image_demo.py /demo/P2805.png configs/oan/faster_rcnn_roitrans_r50_fpn_1x_dota10_oan.py P_PTH/faster_rcnn_roitrans_r50_fpn_1x_dota10_oan.pth  BboxToolkit/tools/split_configs/dota1_5/ss_test.json output.png
+```
+
+```shell
+# inference on a single image
+python demo/image_demo.py data/split_ss_dota1_0/test/images/P1971_0005.png configs/oan/faster_rcnn_obb_r50_fpn_1x_dota10_oan.py P_PTH/faster_rcnn_obb_r50_fpn_1x_dota10_oan.pth O_OUTPUT/OUT_P1971_0005.png
+```
+
+<!--  -->
+---
+<!--  -->
+
+
+## 4 Testing
+
+```shell
+python tools/test.py configs/oan/faster_rcnn_orpn_r50_fpn_1x_dota10_ss_oan.py P_PTH/faster_rcnn_orpn_r50_fpn_1x_dota10_ss_oan.pth --format-only
+```
+
+
+<!--  -->
+---
+<!--  -->
+
+the outputs of the testing shall be like this
+
+```shell
+dota_submission_dir$ ls
+Task1_baseball-diamond.txt    Task1_harbor.txt         Task1_roundabout.txt         Task1_storage-tank.txt
+Task1_basketball-court.txt    Task1_helicopter.txt     Task1_ship.txt               Task1_swimming-pool.txt
+Task1_bridge.txt              Task1_large-vehicle.txt  Task1_small-vehicle.txt      Task1_tennis-court.txt
+Task1_ground-track-field.txt  Task1_plane.txt          Task1_soccer-ball-field.txt  zip
+```
+
+<!--  -->
+---
+<!--  -->
+
+e.g. ask1_ship.txt
+```shell
+P0298 0.9981546998023987 298.63 631.09 288.81 676.31 6.90 615.07 16.72 569.86
+P0298 0.9966198205947876 810.12 112.31 806.46 131.43 749.94 120.60 753.61 101.48
+P0298 0.9939270615577698 876.93 162.96 873.93 181.51 815.12 172.01 818.12 153.45
+P0298 0.9933449029922485 880.58 128.89 876.50 147.04 824.11 135.27 828.19 117.12
+P0298 0.993104875087738 721.14 130.94 716.89 149.22 663.58 136.83 667.83 118.55
+P0298 0.9930562376976013 500.18 790.48 487.60 851.96 60.43 764.56 73.01 703.08
+P0298 0.9925026893615723 820.13 341.33 815.88 359.16 763.03 346.55 767.28 328.72
+P0298 0.9919962286949158 832.38 306.50 828.92 324.70 763.71 312.33 767.16 294.13
+P0298 0.9904623627662659 702.75 552.19 688.91 614.42 232.03 512.78 245.88 450.54
+```
+
+<!--  -->
+---
+<!--  -->
+
+## 5 Training
+
+```shell
+python tools/train.py configs/oan/faster_rcnn_obb_r50_fpn_1x_dota10_oan.py
+```
+
+.center[<img src="re-oan/oan_train.png" width="800">]
+
+
+<!--  -->
+---
+<!--  -->
+
+
+## 5 Training
+
+The trained outputs will be like this
+
+```shell
+20230529_202330.log       epoch_11.pth  epoch_2.pth  epoch_5.pth  epoch_8.pth                               latest.pth
+20230529_202330.log.json  epoch_12.pth  epoch_3.pth  epoch_6.pth  epoch_9.pth
+epoch_10.pth              epoch_1.pth   epoch_4.pth  epoch_7.pth  faster_rcnn_obb_r50_fpn_1x_dota10_oan.py
+```
 
 </textarea> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js" type="text/javascript"></script>
