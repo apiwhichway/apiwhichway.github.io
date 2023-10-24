@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TYPE WHATEVER FUKCING AWESOME TITILE YOU WANT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+    <!-- MathJax support  -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        showProcessingMessages: false,
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support end -->
+  </head>
+  <body>
+<textarea id="source">
+
+
+
+Arch Train Generator 
+24/10/2023 11:35, TODO 3.1 
+
+<!--  -->
+---
+<!--  -->
+
+[Zotero]
+1. Deep Residual Learning for Image Recognition
+
+[Pytorch Doc]
+2.1 Resnet18 https://pytorch.org/vision/main/models/generated/torchvision.models.resnet18.html
+
+<!--  -->
+---
+<!--  -->
+
+2.2 [Core] TORCHVISION.MODELS.RESNET https://pytorch.org/vision/main/_modules/torchvision/models/resnet.html#ResNet18_Weights
+
+<!--  -->
+---
+<!--  -->
+
+2.3 [Accuracy and Function] https://pytorch.org/vision/main/models/generated/torchvision.models.wide_resnet50_2.html#torchvision.models.Wide_ResNet50_2_Weights
+
+<!--  -->
+---
+<!--  -->
+
+2.4 TORCHSCRIPT SUPPORT
+https://pytorch.org/vision/main/auto_examples/others/plot_scripted_tensor_transforms.html#sphx-glr-auto-examples-others-plot-scripted-tensor-transforms-py
+
+<!--  -->
+---
+<!--  -->
+
+3.1 Streamlit Sidebar twice 
+[It works!]
+Stream lit sidebar with column test succeed
+
+```python
+import time
+import streamlit as st
+
+
+def main():
+    st.title("Streamlit Gallery")
+    with st.sidebar:
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            st.header("A cat")
+            st.image("https://static.streamlit.io/examples/cat.jpg")
+
+        with col2:
+            st.header("A dog")
+            st.image("https://static.streamlit.io/examples/dog.jpg")
+
+        with col3:
+            st.header("An owl")
+            st.image("https://static.streamlit.io/examples/owl.jpg")
+
+if __name__ == "__main__":
+    st.set_page_config(page_title="Streamlit Gallery by Okld", page_icon="🎈", layout="wide")
+    main()
+```
+
+<!--  -->
+---
+<!--  -->
+
+3.2 [Optional && Either tow columns are okay enough] Streamlit elements features insert into the sidebar
+https://github.com/okld/streamlit-gallery/tree/main/streamlit_gallery/components/elements
+
+<!--  -->
+---
+<!--  -->
+
+3.3 The second column with 2.1-2.4 pytorch specific Train Resnet
+
+
+
+
+
+
+
+
+
+</textarea> 
+<!-- <script src="https://remarkjs.com/downloads/remark-0.6.3.min.js" type="text/javascript"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js" type="text/javascript"></script>
+<!-- Uncomment this if there is no internet -->
+<!-- <script src="remark-0.6.3.min.js" type="text/javascript"> -->
+<!--   </script> -->
+
+<script type="text/javascript">
+  var slideshow = remark.create(      {
+    // Navigation options
+    navigation: {
+      // Enable or disable navigating using scroll
+      // Default: true
+      // Alternatives: false
+      scroll: false,
+    }
+  }
+  );
+</script>
+</body>
+</html>
