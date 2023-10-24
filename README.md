@@ -1,6 +1,4 @@
-
 # W_Web
-
 
 2023/10/12 [Enabling conda in Windows Powershell](https://apiwhichway.github.io/W_WEB/Enabling%20conda%20in%20Windows%20Powershell.html)
 
@@ -18,15 +16,21 @@
 
 2023/10/18 [OAN reshape](https://apiwhichway.github.io/W_WEB/OAN-Reshape.html)
 
+It seems the 1024 is the coder day so far
+
+2023/10/24 [TrainNet_Generator](https://apiwhichway.github.io/W_WEB/TrainNet_Generator.html)
+
+2023/10/24 [High Concurrency Issue of Steam](https://apiwhichway.github.io/W_WEB/HighConcurrent_Issue_of_Steam.html)
 
 TODO
--------
+----
+
 - [ ] add more css, as the cdn format [cdnjs.com](https://cdnjs.com/)
 - [ ] add more js, as the cdn format [cdnjs](https://cdnjs.com/)
 
-
 License
 -------
+
 ```
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
