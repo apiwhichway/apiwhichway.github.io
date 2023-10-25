@@ -20,7 +20,7 @@
 
 2023/10/24 [High Concurrency Issue of Steam](https://apiwhichway.github.io/W_WEB/HighConcurrent_Issue_of_Steam.html)
 
-2023/10/25 [Raspberry Pi Torch Install Notes](https://apiwhichway.github.io/W_WEB/RaspberryPi_Torch.html) |  [(Markdown)](https://apiwhichway.github.io/W_WEB/RaspberryPi_Torch.md)
+2023/10/25 [Raspberry Pi Torch Install Notes](https://apiwhichway.github.io/O_OS/RaspberryPi_Torch.html) |  [(Markdown)](https://apiwhichway.github.io/O_OS/RaspberryPi_Torch.md)
 
 
 
