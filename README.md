@@ -16,11 +16,14 @@
 
 2023/10/18 [OAN reshape](https://apiwhichway.github.io/W_WEB/OAN-Reshape.html)
 
-It seems the 1024 is the coder day so far
-
 2023/10/24 [TrainNet_Generator](https://apiwhichway.github.io/W_WEB/TrainNet_Generator.html)
 
 2023/10/24 [High Concurrency Issue of Steam](https://apiwhichway.github.io/W_WEB/HighConcurrent_Issue_of_Steam.html)
+
+2023/10/25 [Raspberry Pi Torch Install Notes](https://apiwhichway.github.io/W_WEB/RaspberryPi_Torch.html) 
+ [Raspberry Pi Torch Install Notes (Markdown)](https://apiwhichway.github.io/W_WEB/RaspberryPi_Torch.md)
+
+
 
 TODO
 ----
