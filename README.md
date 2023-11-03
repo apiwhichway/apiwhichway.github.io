@@ -24,6 +24,11 @@
 
 2023/10/30 [MONet and Pycaffe](https://apiwhichway.github.io/O_OS/MONetPycaffe.html) 
 
+
+2023/11/3 | [ ReDet ](https://apiwhichway.github.io/A_AI\ReDet\redet.html) |  [(Markdown)](https://apiwhichway.github.io/A_AI\ReDet\redet.md)
+
+
+
 TODO
 ----
 
