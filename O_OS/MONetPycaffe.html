@@ -26,7 +26,7 @@
   <body>
 <textarea id="source">
 
-## 1. Using multi-label classification to improve object detection  
+### A: 1. Using multi-label classification to improve object detection  
 
 .center[<img src="Images_MONetPycaffe/monet1.png" width="800">]
 
@@ -65,6 +65,95 @@
 
 .center[<img src="Images_MONetPycaffe/monet5caffe.png" width="800">]
 
+
+
+<!--  -->
+---
+<!--  -->
+
+
+## B. 1. Pycaffe vs Pytorch
+
+|                             | PyCaffe                                  | PyTorch                                 |
+|-----------------------------|------------------------------------------|-----------------------------------------|
+| Background                  | Deep learning framework based on Caffe | - Deep learning framework developed by Facebook AI Research  |
+| Language                    | Python                                   | Python                                  |
+| Developer/Contributor       | Berkeley Vision and Learning Center (BVLC) | Facebook AI Research                     |
+| Ease of Use                 | Relatively complex                        | Simpler to use                           |
+| Flexibility                 | Limited customization options             | Highly flexible                          |
+| Computational Graph         | Not a native part of the framework        | Built-in support for dynamic graphs      |
+| GPU Support                 | Yes                                      | Yes                                     |
+| Model Zoo                   | Large collection of pre-trained models    | Growing collection of pre-trained models |
+| Visualization Tools         | Limited visualization capabilities        | Extensive visualization tools            |
+
+<!--  -->
+---
+<!--  -->
+
+
+1.  Understand the PyTorch Framework: 
+    
+2.  Convert Model Architecture: 
+
+3.  Update Data Loading and Preprocessing: 
+    
+4.  Transfer Weights: 
+    
+5.  Update Training Loop: Adapt your training loop to PyTorch's APIs. 
+
+6.  Verify and Fine-tune: Once you've migrated the code, 
+
+
+
+
+<!--  -->
+---
+<!--  -->
+
+- MONet is an object detection framework built on R-FCN and py-R-FCN. It uses multi-label classification to improve object detection performance.
+- The installation instructions cover building Cython modules, Caffe, and pycaffe. Caffe must be built with Python layer support enabled.
+- Preparing training and testing data follows the py-R-FCN repository. Pre-trained ResNet-101 weights must be downloaded.
+- Training is done similarly to py-R-FCN. The example starts training on Pascal VOC with multiple GPUs.
+- Without multi-scale training, MONet achieves 83.0% mAP on Pascal VOC 2007. With multi-scale training, 83.6% mAP is possible.
+
+<!--  -->
+---
+<!--  -->
+
+
+Replace the pycaffe minibatch loading and preprocessing with equivalent pytorch dataloader and transforms. Pytorch has flexible dataloaders and transform classes that can handle augmentation similarly to pycaffe.
+- Port the MONet model architecture from Caffe to pytorch. You'll need to rewrite the model layers and forward pass using pytorch Modules and Sequential containers. Make sure to match the layer connectivity and configurations from Caffe.
+- Modify the training loop to use pytorch optimizations like torch.optim, autograd, etc instead of caffe solvers. Pytorch has optimizers that provide similar functionality to Caffe solvers.
+- Replace Caffe blob handling with pytorch Tensors. The core data structures are different between frameworks.
+- Update any postprocessing steps like NMS to use pytorch functions instead of pycaffe/Caffe.
+- Handle GPU vs CPU transparently in pytorch - no need to specifically switch between like Caffe.
+- Refactor code into pytorch style - modules, train loop, data loading. Pytorch code looks quite different from Caffe styles.
+
+
+<!--  -->
+---
+<!--  -->
+
+Imports:
+- Replace Caffe imports with equivalent PyTorch modules: torch, torch.nn, torch.optim, etc.
+Data Loading:
+- Replace the Dataset class with a PyTorch Dataset subclass
+- Use a PyTorch DataLoader with collate_fn to batch samples
+- Convert any image preprocessing to PyTorch transforms
+Model Architecture:
+- Port the model layers from Caffe to PyTorch nn.Module subclasses
+- Use nn.Sequential to reproduce layer ordering
+- Ensure input/output shapes match between versions
+Training Loop:
+- Replace the Caffe solver with PyTorch optimizer (e.g. SGD)
+- Use PyTorch loss functions like nn.CrossEntropyLoss
+- Iterate over data loader for training batches
+- Compute loss and backprop with loss.backward()
+- Optimize with optimizer.step()
+- Track metrics like loss, accuracy over epochs
+Misc:
+- Move model saving/loading to PyTorch APIs
+- Replace any Caffe blob ops with Tensor equivalents
 
 
 
