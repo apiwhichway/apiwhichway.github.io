@@ -5,7 +5,7 @@
 
 # W_Web
 
-TOP [Best-websites-a-programmer-should-visit](A_AWESOME\Best-websites-a-programmer-should-visit\README.md)
+TOP [Best-websites-a-programmer-should-visit](https://apiwhichway.github.io/A_AWESOME/Best-websites-a-programmer-should-visit/README.md)
 
 2023/10/12 [Enabling conda in Windows Powershell](https://apiwhichway.github.io/W_WEB/Enabling%20conda%20in%20Windows%20Powershell.html)
 
@@ -31,7 +31,7 @@ TOP [Best-websites-a-programmer-should-visit](A_AWESOME\Best-websites-a-programm
 
 2023/10/30 [MONet and Pycaffe](https://apiwhichway.github.io/O_OS/MONetPycaffe.html)
 
-2023/11/3 | [ ReDet ](https://apiwhichway.github.io/A_AI\ReDet\redet.html) |  [(Markdown)](https://apiwhichway.github.io/A_AI\ReDet\redet.md)
+2023/11/3 | [ ReDet ](https://apiwhichway.github.io/A_AI/ReDet/redet.html) |  [(Markdown)](https://apiwhichway.github.io/A_AI/ReDet/redet.md)
 
 TODO
 ----
