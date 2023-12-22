@@ -1,11 +1,32 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TYPE WHATEVER FUKCING AWESOME TITILE YOU WANT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+    <!-- MathJax support  -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        showProcessingMessages: false,
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support end -->
+  </head>
+  <body>
+<textarea id="source">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 <h1 align="center">
     <br>
@@ -20,9 +41,13 @@ Some useful websites for programmers.
 
 When learning CS, there are some useful sites you must know to get always informed to do your technologies even better and learn new things. Here is a non-exhaustive list of some sites you should visit. This list will get updated as soon as I can get another link, but you can also contribute by adding those you know 😉
 
+<!--  -->
+---
+<!--  -->
+
 **Note** : [Chinese Version](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)
 
-https://pages.github.com/themes/
+
 
 ## Move left and right
 
@@ -42,6 +67,10 @@ To move to the end of a line, press **End.**
 
 If lines were added, press Home or End twice to move to the beginning or end of the lines.
 
+<!--  -->
+---
+<!--  -->
+
 ## Index
 
 <ul>
@@ -58,6 +87,12 @@ If lines were added, press Home or End twice to move to the beginning or end of 
 <li><a href="#documentaries">Documentaries</a></li>
 <li><a href="#moocs-for-learning-something-new">MOOCs for learning something new</a></li>
 <li><a href="#sites-related-to-your-preferred-programming-language-for-me-c">Sites related to your preferred programming language (For me C++)</a></li>
+
+<!--  -->
+---
+<!--  -->
+
+## Index 2
 <li><a href="#learn-ai">Artificial Intelligence And Machine Learning</a></li>
 <li><a href="#seminar-research-writing-talks-etc">Seminar , research writing , talks etc</a></li>
 <li><a href="#everything-in-one-place">Everything in one place</a></li>
@@ -69,6 +104,12 @@ If lines were added, press Home or End twice to move to the beginning or end of 
 <li><a href="#watch-others-code">Watch others code</a></li>
 <li><a href="#tutorials">Tutorials</a></li>
 <li><a href="#what-should-a-programmer-know">What should a programmer know</a></li>
+
+<!--  -->
+---
+<!--  -->
+
+## Index 3
 <li><a href="#competitive-programming">Competitive programming</a></li>
 <li><a href="#computer-books">Computer Books</a></li>
 <li><a href="#video-tutorials">Video Tutorials</a></li>
@@ -80,6 +121,10 @@ If lines were added, press Home or End twice to move to the beginning or end of 
 <li><a href="#internships">Internships</a></li>
 <li><a href="#jobs">Jobs</a></li>
 </ul>
+
+<!--  -->
+---
+<!--  -->
 
 ## When you get stuck
 
@@ -1019,3 +1064,27 @@ If lines were added, press Home or End twice to move to the beginning or end of 
 
 - Please consider a GitHub star if you find this useful and/or consider contributing.
 - A special thanks to Ashish Padalkar (@ashish2199) for contributing a great amount of data and structure to the initial repository [Original Post](https://www.quora.com/How-to-Create-a-Blog-2/answer/Ashish-Padalkar?srid=OH96).
+
+
+
+</textarea> 
+<!-- <script src="https://remarkjs.com/downloads/remark-0.6.3.min.js" type="text/javascript"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js" type="text/javascript"></script>
+<!-- Uncomment this if there is no internet -->
+<!-- <script src="remark-0.6.3.min.js" type="text/javascript"> -->
+<!--   </script> -->
+
+<script type="text/javascript">
+  var slideshow = remark.create(      {
+    // Navigation options
+    navigation: {
+      // Enable or disable navigating using scroll
+      // Default: true
+      // Alternatives: false
+      scroll: false,
+    }
+  }
+  );
+</script>
+</body>
+</html>
